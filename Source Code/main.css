@@ -1,0 +1,181 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation bar */
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  /* width: 100%; */
+  width: 100%;
+  padding: 20px 0;
+  color: #fff;
+}
+
+p.logo {
+  flex: 1;
+  font-size: 24px;
+  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 1%;
+}
+
+img {
+  margin-right: 2%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Welcome Section */
+.welcome-section {
+  background-image: url(https://hookagency.com/wp-content/uploads/2018/05/gradient-background.jpeg);
+  background-size: cover;
+
+  padding: 100px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.welcome-section h2 {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.welcome-section p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+/* Interactive Section */
+.interactive-section {
+  padding: 80px 0;
+}
+
+.interactive-section h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.interactive-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box-item {
+  background-color: rgba(200, 200, 200, 0.4);
+  padding: 30px;
+  border-radius: 5px;
+  /* box-shadow: 0 2px 5px rgba(126, 40, 40, 0.774); */
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin: 25px 50px 75px 100px;
+  border: solid 1px #555;
+}
+
+.box-item:hover {
+  background-color: rgba(200, 200, 200, 0.9);
+  transform: translateY(5px);
+}
+
+/* Hover Change Color for Nav Bar Links*/
+.nav-links li a:hover {
+  color: crimson;
+}
+
+/* Add a gradient background for the text*/
+
+h2.grad {
+  font-size: 52px;
+  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #000000;
+}
+
+h1.grad{
+  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #000000;
+}
+
+p.grad {
+  h2.grad {
+    /* font-size: 52px; */
+    background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #000000;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .navbar .container {
+    display: inline-block;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .navbar .container {
+    display: block;
+    align-items: center;
+  }
+  .interactive-box {
+    display: inline-block;
+    justify-content: space-around;
+  }
+}

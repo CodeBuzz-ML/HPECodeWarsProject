@@ -1,0 +1,16 @@
+body {
+  background-image: url(https://hookagency.com/wp-content/uploads/2018/05/gradient-background.jpeg);
+  background-size: cover !important;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  /* position:  */
+  /* justify-content: center; */
+  /* align-items: center; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.book {
+  background-color: rgba(255, 255, 255, 0.4);
+}
